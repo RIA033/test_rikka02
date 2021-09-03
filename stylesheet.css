@@ -1,0 +1,191 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*-start-line-*/
+body {
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/*header*/
+.header {
+    max-width: 100%;
+    height: 80px;
+}
+.header img {
+    width: 130px;
+    margin-top: -10px;
+    padding-left: 30px;
+    position: relative;
+}
+.header_logo {
+    float: left;
+}
+#twitter {
+    width: 50px;
+    position: absolute;
+    top: 40px;
+    right: 150px;
+    opacity: 0.5;
+}
+#twitter:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+/*main*/
+.wrap_txt {
+    width: 100%;
+    height: 150px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 1.3;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*main画像*/
+.m_mwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.m_wrap img {
+    width: 560px;
+    height: 320px;
+}
+.m_wrap {
+    width: 560px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+.m_wrap .caption {
+    font-size: 60%;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+.m_wrap .mask {
+    width: 30%;	/* 画像の半分の大きさにする */
+	height: 100%;
+	position: absolute;
+	top: 0; 
+	left: 0;
+	margin-left: -30%;	/* 枠の左に置いて表示させない */
+	background-color:rgba(112, 99, 110, 0.904);
+	-webkit-transition:	all 0.4s ease;
+	transition:	all 0.4s ease;
+}
+.m_wrap:hover .mask {
+	margin-left: 0px;	/* 右にずらして表示する */
+}
+.m_wrap img {
+    -webkit-transition:	all 0.4s ease;
+	transition:		all 0.4s ease;
+}
+.m_wrap:hover img {
+    margin-left:		30%;	/* 画像を半分サイズ、右にずらす */
+}
